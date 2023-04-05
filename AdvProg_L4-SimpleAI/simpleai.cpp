@@ -146,10 +146,9 @@ bool isWholeWord(const string& mask)
 {
     //Write your code here
     for (char x : mask){
-        if (x <'a' || x > 'z') continue;
-        else return true;
+        if (x <'a' || x > 'z') return false;
     }
-    return false;
+    return true;
 }
 
 /***
