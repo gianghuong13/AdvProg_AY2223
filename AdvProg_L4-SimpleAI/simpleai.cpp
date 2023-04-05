@@ -81,8 +81,8 @@ char findMostFrequentChar(const map<char, int>& occurrences, const set<char>& se
     char answer;
     //Write your code here
     int max = 0;
-    for (pair<char, int> x : occurences){
-        if (selectedChars.find(x.first)!=selectedChars.end() || x.sencond <= max)
+    for (pair<char, int> x : occurrences){
+        if (selectedChars.find(x.first)!=selectedChars.end() || x.second <= max)
         continue;
         else {
             max = x.second;
@@ -147,7 +147,7 @@ bool isWholeWord(const string& mask)
     bool answer = false;
     //Write your code here
     for (char x : mask){
-        if (ch >= 'a' && ch <= 'z') answer = true;
+        if (x >= 'a' && x <= 'z') answer = true;
     }
     return answer;
 }
