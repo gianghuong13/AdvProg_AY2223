@@ -144,12 +144,12 @@ bool isCorrectChar(char ch, const string& mask)
 ***/
 bool isWholeWord(const string& mask)
 {
-    bool answer = false;
     //Write your code here
     for (char x : mask){
-        if (x >= 'a' && x <= 'z') answer = true;
+        if (x <'a' || x > 'z') continue;
+        else return true;
     }
-    return answer;
+    return false;
 }
 
 /***
