@@ -59,7 +59,7 @@ void Game::snakeMoveTo(Position pos) {
 		case CELL_CHERRY:
 			++score;
 			snake.eatCherry();
-			addCherry;
+			addCherry();
 			break;
 		default:
 			snake.slideTo(pos);
